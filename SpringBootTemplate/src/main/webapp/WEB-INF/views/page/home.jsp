@@ -5,10 +5,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link rel="icon" href="<c:url value="/static/res/favicon.ico"/>"
+<link rel="icon" href="<c:url value="res/favicon.ico"/>"
 	type="image/x-icon" />
-<link rel="shortcut icon"
-	href="<c:url value="/static/res/favicon.ico"/>" type="image/x-icon" />
 <title>Home</title>
 </head>
 <body>Home Page

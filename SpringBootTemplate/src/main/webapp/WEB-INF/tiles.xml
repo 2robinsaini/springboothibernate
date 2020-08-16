@@ -19,13 +19,12 @@
 		<put-attribute name="title" value="" />
 		<put-attribute name="header"
 			value="/WEB-INF/views/tile/header.jsp" />
-		<!-- <put-attribute name="menu"
-			value="/WEB-INF/views/tile/menu.jsp" /> -->
+		<!-- <put-attribute name="menu" value="/WEB-INF/views/tile/menu.jsp" /> -->
 		<put-attribute name="body" value="" />
-		<!-- <put-attribute name="footer"
-			value="/WEB-INF/views/tile/footer.jsp" /> -->
+		<!-- <put-attribute name="footer" value="/WEB-INF/views/tile/footer.jsp" 
+			/> -->
 	</definition>
-	
+
 	<definition name="login" extends="base.loginPage">
 		<put-attribute name="title" value="User Login" />
 		<put-attribute name="body"
@@ -37,11 +36,45 @@
 		<put-attribute name="body"
 			value="/WEB-INF/views/page/hello.jsp" />
 	</definition>
-	
+
 	<definition name="home" extends="base.appPage">
 		<put-attribute name="title" value="Home Page" />
 		<put-attribute name="body"
 			value="/WEB-INF/views/page/home.jsp" />
+	</definition>
+
+
+	<definition name="students" extends="base.appPage">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/page/students.jsp" />
+	</definition>
+
+
+	<definition name="addNewStudent" extends="base.appPage">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/page/addNewStudent.jsp" />
+	</definition>
+
+
+	<definition name="address" extends="base.appPage">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/page/address.jsp" />
+	</definition>
+	
+	<definition name="showAddress" extends="base.appPage">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/page/address.jsp" />
+	</definition>
+	
+	
+	<definition name="updateAddress" extends="base.appPage">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/page/updateAddress.jsp" />
 	</definition>
 
 </tiles-definitions>  
