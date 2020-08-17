@@ -11,12 +11,12 @@
 </head>
 <body>
 
-	<div style="border-bottom: 1px;">
+	<div style="background-image: url('res/image/footer.jpg');opacity: 0.7;border-bottom: 1px;">
 		<table>
 			<tr style="width: 100%; border-bottom: 1px;" align="center">
 				<td style="align: left; width: 5%;"><a href="home"> <img
 						src="res/image/home.png" height="60px;" width="100px;"></a></td>
-				<td style="width: 85%;"><p>Welcome to the Application</p></td>
+				<td style="width: 85%;"><p >Welcome to the Application</p></td>
 				<td style="width: 10%;"><c:url value="/logout" var="logoutUrl" />
 
 					<!-- csrt for log out-->

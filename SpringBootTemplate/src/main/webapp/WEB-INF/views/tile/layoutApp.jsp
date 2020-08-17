@@ -14,8 +14,8 @@
 	</div>
 
 	<div style="background: green; width: 100%;">
-		<div class="menu" style="float:left;padding:10px;width:15%;"><tiles:insertAttribute name="menu" /></div>    
-        <div style="float:left;padding:10px;width:80%;">    
+		<div class="menu" style="float:left;padding:10px;width:10%; opacity: 0.9; border-bottom: 1px; background-repeat: repeat-y"><tiles:insertAttribute name="menu" /></div>    
+        <div style="float:left;padding:10px;width:85%;">    
         <tiles:insertAttribute name="body" /></div>   
 	</div>
 	<div class="footer" align="center">

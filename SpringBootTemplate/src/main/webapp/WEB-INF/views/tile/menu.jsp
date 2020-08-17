@@ -8,7 +8,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<a class="button" href="students">All Students</a> <br>
-	<a class="button" href="addStudent">Add Student</a>
+
+	<div align="center">
+		<a class="button" href="students">All Students</a> <br> <a
+			class="button" href="addStudent">Add Student</a>
+	</div>
+
+
 </body>
 </html>
