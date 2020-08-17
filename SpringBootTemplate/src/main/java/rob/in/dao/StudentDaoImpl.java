@@ -45,7 +45,7 @@ public class StudentDaoImpl implements StudentDao {
 	}
 
 	@Override
-	public void addStudent(Student student, Address address) {
+	public void addStudent(Student student) {
 		session = getSession();
 	    Transaction tx = null;
 	    try {

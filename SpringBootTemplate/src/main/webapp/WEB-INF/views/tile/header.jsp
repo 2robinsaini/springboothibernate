@@ -7,7 +7,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-
+<link rel="stylesheet" href="res/css/custom.css">
 </head>
 <body>
 
@@ -16,8 +16,7 @@
 			<tr style="width: 100%; border-bottom: 1px;" align="center">
 				<td style="align: left; width: 5%;"><a href="home"> <img
 						src="res/image/home.png" height="60px;" width="100px;"></a></td>
-				<td style="width: 85%;"><p>Welcome to the Spring Boot
-						Application</p></td>
+				<td style="width: 85%;"><p>Welcome to the Application</p></td>
 				<td style="width: 10%;"><c:url value="/logout" var="logoutUrl" />
 
 					<!-- csrt for log out-->
@@ -27,11 +26,12 @@
 					</form> <c:choose>
 						<c:when test="${pageContext.request.userPrincipal.name != null}">
 
-							<a href="javascript:document.getElementById('logout').submit()">Logout!</a>
+							<a class="button" href="javascript:document.getElementById('logout').submit()">Logout!</a>
 						</c:when>
 						<c:otherwise>
 							<c:if test="${username !=null }">
-								<a href="javascript:document.getElementById('logout').submit()">Logout</a>
+								<a class="button"
+									href="javascript:document.getElementById('logout').submit()">Logout</a>
 							</c:if>
 						</c:otherwise>
 

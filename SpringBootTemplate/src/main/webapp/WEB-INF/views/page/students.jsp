@@ -15,35 +15,35 @@
 
 	<div>
 
-		<table>
+		<table class="tableCustom">
 
 			<tr class="tableRow">
-				<th>Enrollment Number</th>
-				<th>Student Name</th>
-				<th>Father Name</th>
-				<th>Mobile Number</th>
-				<th>Date of Birth</th>
-				<th>Date of admission</th>
-				<th>Previous School</th>
-				<th>Standard/Course</th>
-				<th>Section/Branch</th>
-				<th>Address Link</th>
+				<th class="tableCustom">Enrollment Number</th>
+				<th class="tableCustom">Student Name</th>
+				<th class="tableCustom">Father Name</th>
+				<th class="tableCustom">Mobile Number</th>
+				<th class="tableCustom">Date of Birth</th>
+				<th class="tableCustom">Date of admission</th>
+				<th class="tableCustom">Previous School</th>
+				<th class="tableCustom">Standard/Course</th>
+				<th class="tableCustom">Section/Branch</th>
+				<th class="tableCustom">Address Link</th>
 
 			</tr>
 
 
 			<c:forEach var="std" items="${studentList}">
 				<tr>
-					<td><c:out value="${std.enrollmentNumner}" /></td>
-					<td><c:out value="${std.name}" /></td>
-					<td><c:out value="${std.fatherName}" /></td>
-					<td><c:out value="${std.motherName}" /></td>
-					<td><c:out value="${std.dob}" /></td>
-					<td><c:out value="${std.doj}" /></td>
-					<td><c:out value="${std.prevSchoolName}" /></td>
-					<td><c:out value="${std.std}" /></td>
-					<td><c:out value="${std.section}" /></td>
-					<td><a class="button" href="showAddress?addId=${std.address.id}"> <c:out
+					<td class="tableCustom"><c:out value="${std.enrollmentNumner}" /></td>
+					<td class="tableCustom"><c:out value="${std.name}" /></td>
+					<td class="tableCustom"><c:out value="${std.fatherName}" /></td>
+					<td class="tableCustom"><c:out value="${std.motherName}" /></td>
+					<td class="tableCustom"><c:out value="${std.dob}" /></td>
+					<td class="tableCustom"><c:out value="${std.doj}" /></td>
+					<td class="tableCustom"><c:out value="${std.prevSchoolName}" /></td>
+					<td class="tableCustom"><c:out value="${std.std}" /></td>
+					<td class="tableCustom"><c:out value="${std.section}" /></td>
+					<td class="tableCustom"><a class="button" href="showAddress?addId=${std.address.id}"> <c:out
 								value="${std.address.id}" />
 					</a></td>
 

@@ -26,8 +26,8 @@ public class StudentServiceImpl implements StudentService {
 	}
 
 	@Override
-	public void addStudent(Student student, Address address) {
-		stdDao.addStudent(student,address);
+	public void addStudent(Student student) {
+		stdDao.addStudent(student);
 	}
 
 	@Override

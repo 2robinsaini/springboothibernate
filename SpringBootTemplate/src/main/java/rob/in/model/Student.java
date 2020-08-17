@@ -135,4 +135,13 @@ public class Student implements Serializable {
 		this.address = address;
 	}
 
+	@Override
+	public String toString() {
+		return "Student [enrollmentNumner=" + enrollmentNumner + ", name=" + name + ", fatherName=" + fatherName
+				+ ", motherName=" + motherName + ", dob=" + dob + ", doj=" + doj + ", prevSchoolName=" + prevSchoolName
+				+ ", std=" + std + ", section=" + section + ", address=" + address + "]";
+	}
+
+	
+	
 }

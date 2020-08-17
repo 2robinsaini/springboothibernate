@@ -9,6 +9,6 @@
 	type="image/x-icon" />
 <title>Home</title>
 </head>
-<body>Home Page
+<body>Please Select options from Left Side Menu
 </body>
 </html>

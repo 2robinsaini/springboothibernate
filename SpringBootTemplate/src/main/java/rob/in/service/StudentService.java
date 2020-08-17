@@ -11,8 +11,9 @@ public interface StudentService {
 
 	public Address getAddressFromAddId(String addId);
 
-	public void addStudent(Student student, Address address);
+	public void addStudent(Student student);
 
 	public void updateAddress(Address address);
+
 	
 }

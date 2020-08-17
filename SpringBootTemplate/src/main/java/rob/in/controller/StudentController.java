@@ -2,6 +2,8 @@ package rob.in.controller;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -43,13 +45,28 @@ public class StudentController {
 	}
 
 	@PostMapping("/addNewStd")
-	public String addNewStd(Model model, @ModelAttribute("student") Student student,
-			@ModelAttribute("address") Address address) {
-		nextView = "students";
-		stdService.addStudent(student, address);
-		List<Student> allStudent = stdService.getAllStudents();
-		model.addAttribute("studentList", allStudent);
-		return nextView;
+	public String addNewStd(@Valid @ModelAttribute("student") Student student,BindingResult br,
+			Model model) {
+
+		
+		System.out.println("************** " + student);
+		
+		
+		if (br.hasErrors()) {
+			nextView = "addNewStudent";
+			Address address = new Address();
+			model.addAttribute("student", student);
+			model.addAttribute("address", address);
+			model.addAttribute("message", "Please Provide Proper Data!!");
+			return nextView;
+		} else {
+			nextView = "students";
+			stdService.addStudent(student);
+			List<Student> allStudent = stdService.getAllStudents();
+			model.addAttribute("studentList", allStudent);
+			return nextView;
+		}
+
 	}
 
 	@GetMapping("/showAddress")
@@ -58,7 +75,7 @@ public class StudentController {
 		Address add = stdService.getAddressFromAddId(addId);
 		model.addAttribute("add", add);
 		return nextView;
-	} 
+	}
 
 	@GetMapping("/updateAddress")
 	public String updateAddress(Model model, @RequestParam("addId") String addId) {
@@ -71,8 +88,8 @@ public class StudentController {
 	}
 
 	@PostMapping("/updateStdAdd")
-	public String updateStdAdd( Model model,@ModelAttribute("address") Address address) {
-		
+	public String updateStdAdd(Model model, @ModelAttribute("address") Address address) {
+
 		System.out.println("AddId to be update: " + address.getId());
 		System.out.println("City to be update: " + address.getCity());
 		stdService.updateAddress(address);
@@ -82,4 +99,4 @@ public class StudentController {
 		return nextView;
 	}
 
-} 
+}

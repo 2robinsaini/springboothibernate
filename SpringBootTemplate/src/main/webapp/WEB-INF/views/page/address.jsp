@@ -16,35 +16,36 @@
 <body>
 
 
-	<table>
+	<table class="tableCustom">
 
-		<tr class="tableRow">
-			<th>Address ID</th>
-			<th>House Number/Flat Number</th>
-			<th>Contact Number</th>
-			<th>Tower Name/Floor Number</th>
-			<th>Society Or Streat Name</th>
-			<th>Near By</th>
-			<th>City</th>
-			<th>District</th>
-			<th>Pin</th>
-			<th>Country</th>
-			<th>Update Address</th>
+		<tr class="tableRow tableCustom">
+			<th class="tableCustom">Address ID</th>
+			<th class="tableCustom">House Number/Flat Number</th>
+			<th class="tableCustom">Contact Number</th>
+			<th class="tableCustom">Tower Name/Floor Number</th>
+			<th class="tableCustom">Society Or Streat Name</th>
+			<th class="tableCustom">Near By</th>
+			<th class="tableCustom">City</th>
+			<th class="tableCustom">District</th>
+			<th class="tableCustom">Pin</th>
+			<th class="tableCustom">Country</th>
+			<th class="tableCustom">Update Address</th>
 		</tr>
 
 
-		<tr>
-			<td><c:out value="${add.id}" /></td>
-			<td><c:out value="${add.flatOrHouseNumber}" /></td>
-			<td><c:out value="${add.contactNumber}" /></td>
-			<td><c:out value="${add.towerName}" /></td>
-			<td><c:out value="${add.socityOrStreatName}" /></td>
-			<td><c:out value="${add.nearBy}" /></td>
-			<td><c:out value="${add.city}" /></td>
-			<td><c:out value="${add.district}" /></td>
-			<td><c:out value="${add.pin}" /></td>
-			<td><c:out value="${add.country}" /></td>
-			<td><a class="button" href="updateAddress?addId=${add.id}">Update Address</a></td>
+		<tr class="tableCustom">
+			<td class="tableCustom"><c:out value="${add.id}" /></td>
+			<td class="tableCustom"><c:out value="${add.flatOrHouseNumber}" /></td>
+			<td class="tableCustom"><c:out value="${add.contactNumber}" /></td>
+			<td class="tableCustom"><c:out value="${add.towerName}" /></td>
+			<td class="tableCustom"><c:out value="${add.socityOrStreatName}" /></td>
+			<td class="tableCustom"><c:out value="${add.nearBy}" /></td>
+			<td class="tableCustom"><c:out value="${add.city}" /></td>
+			<td class="tableCustom"><c:out value="${add.district}" /></td>
+			<td class="tableCustom"><c:out value="${add.pin}" /></td>
+			<td class="tableCustom"><c:out value="${add.country}" /></td>
+			<td class="tableCustom"><a class="button"
+				href="updateAddress?addId=${add.id}">Update Address</a></td>
 		</tr>
 
 	</table>
