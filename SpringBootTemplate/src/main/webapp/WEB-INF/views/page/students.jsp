@@ -21,7 +21,7 @@
 				<th class="tableCustom">Enrollment Number</th>
 				<th class="tableCustom">Student Name</th>
 				<th class="tableCustom">Father Name</th>
-				<th class="tableCustom">Mobile Number</th>
+				<th class="tableCustom">Mother Name</th>
 				<th class="tableCustom">Date of Birth</th>
 				<th class="tableCustom">Date of admission</th>
 				<th class="tableCustom">Previous School</th>
